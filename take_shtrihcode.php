@@ -3,7 +3,7 @@ require_once "token/ya_tok.php";
 require_once "functions/functions_yandex.php";
 
 $campaignId = 22076999;
-$orderId = 400201828;
+$orderId = 400376589;
 
 
 $ya_link = 'https://api.partner.market.yandex.ru/campaigns/'.$campaignId.'/orders/'.$orderId.'/delivery/labels';
