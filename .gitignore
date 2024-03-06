@@ -1,3 +1,6 @@
 json/
 pdf/
 token/
+connect_db.php
+main_info.php
+login.php

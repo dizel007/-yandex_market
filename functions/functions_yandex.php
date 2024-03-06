@@ -81,7 +81,11 @@ function put_query_with_data($ya_token, $ya_link, $ya_data) {
     $http_code = curl_getinfo($ch, CURLINFO_HTTP_CODE); // Получаем HTTP-код
     curl_close($ch);
     
-    echo     'Результат обмена PATCH: '.$http_code. "<br>";
+	if (intdiv($http_code,100) > 2) {
+		echo     'Результат обмена PATCH: '.$http_code. "<br>";
+	}
+
+    
     $res = json_decode($res, true);
     
     return $res;
